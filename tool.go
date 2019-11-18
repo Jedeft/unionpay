@@ -25,11 +25,11 @@ func Base64Encode(data []byte) string {
 	return Base64Base.EncodeToString(data)
 }
 
+// Base64Decode 仅仅用于测试
 func Base64Decode(data string) []byte {
 	v, err := Base64Base.DecodeString(data)
 	if err != nil {
 		return []byte("")
 	}
 	return v
-
 }
