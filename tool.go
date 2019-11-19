@@ -1,12 +1,13 @@
 package unionpay
 
 import (
-	"time"
-	"math/rand"
 	"encoding/base64"
+	"math/rand"
+	"time"
 )
+
 //生成随机字符串
-func GetRandomString(length int) string{
+func GetRandomString(length int) string {
 	str := "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	bytes := []byte(str)
 	result := []byte{}
@@ -25,7 +26,7 @@ func Base64Encode(data []byte) string {
 	return Base64Base.EncodeToString(data)
 }
 
-// Base64Decode 仅仅用于测试提交1
+// Base64Decode 仅仅用于测试提交
 func Base64Decode(data string) []byte {
 	v, err := Base64Base.DecodeString(data)
 	if err != nil {
