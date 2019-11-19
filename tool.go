@@ -26,7 +26,7 @@ func Base64Encode(data []byte) string {
 	return Base64Base.EncodeToString(data)
 }
 
-// Base64Decode 仅仅用于测试提交
+// Base64Decode 仅仅用于测试提交2
 func Base64Decode(data string) []byte {
 	v, err := Base64Base.DecodeString(data)
 	if err != nil {
